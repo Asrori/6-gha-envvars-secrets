@@ -11,7 +11,7 @@ console.log(dbPassword);
 console.log(dbName);
 
 const uri = `mongodb+srv://${dbUser}:${dbPassword}@${clusterAddress}/?retryWrites=true&w=majority&appName=Cluster0`;
-const client = new MongoClient(uri);
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 console.log('Trying to connect to db');
 
