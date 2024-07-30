@@ -9,7 +9,7 @@ env:
 jobs:
   test:
     env:
-      MONBODB_CLUSTER_ADDRES: cluster0.01ervcl.mongodb.net
+      MONGODB_CLUSTER_ADDRESS: cluster0.01ervcl.mongodb.net
       MONGODB_USERNAME: asrorihariri
       MONGODB_PASSWORD: 7tfYV5WWi0vqNVRJ
       PORT: 8080
